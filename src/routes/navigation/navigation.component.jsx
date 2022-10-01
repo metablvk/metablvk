@@ -38,7 +38,7 @@ const Navigation = ({ brand }) => {
               <NavLink to='/portoflio'>portfolio</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to='/contact'>conact</NavLink>
+              <NavLink to='/contact'>contact</NavLink>
             </NavItem>
           </NavMenu>
           <Hamburger onClick={handleClick}>

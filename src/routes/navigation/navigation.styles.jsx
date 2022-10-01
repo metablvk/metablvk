@@ -24,7 +24,7 @@ export const LogoContainer = styled.div`
 
 export const NavItem = styled.li`
   padding-right: 2rem;
-  margin-top: 3rem;
+  margin-top: 2.4rem;
 `;
 
 export const NavMenu = styled.ul`
@@ -46,7 +46,7 @@ export const NavMenu = styled.ul`
     menuState
       ? `
     max-height: 100vh;
-    padding-bottom: 6rem;
+    padding-bottom: 3rem;
   `
       : ''}
   ${({ location }) =>
@@ -71,7 +71,7 @@ export const NavMenu = styled.ul`
   }
   ${NavLink} {
     letter-spacing: 0.3rem;
-    font-size: 4rem;
+    font-size: 3rem;
     color: #808080;
   }
 `;
