@@ -7,7 +7,7 @@ import {
   NavMenu,
   NavLink,
   NavItem,
-  Hamburger,
+  Kebab,
   Bar,
 } from './navigation.styles';
 
@@ -41,11 +41,11 @@ const Navigation = ({ brand }) => {
               <NavLink to='/contact'>contact</NavLink>
             </NavItem>
           </NavMenu>
-          <Hamburger onClick={handleClick}>
+          <Kebab onClick={handleClick}>
             <Bar />
             <Bar />
             <Bar />
-          </Hamburger>
+          </Kebab>
         </NavigationContainer>
       </header>
       <Outlet />

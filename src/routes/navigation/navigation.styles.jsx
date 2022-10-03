@@ -7,6 +7,9 @@ export const NavigationContainer = styled(Container)`
   justify-content: space-between;
   position: relative;
   align-items: center;
+  @media screen and (min-width: 800px) {
+    margin: 2.4rem auto;
+  }
 `;
 
 export const NavLink = styled(Link)``;
@@ -14,7 +17,7 @@ export const NavLink = styled(Link)``;
 export const LogoContainer = styled.div`
   ${NavLink} {
     color: #fff;
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   span {
     font-weight: 600;
@@ -62,6 +65,18 @@ export const NavMenu = styled.ul`
           
         }
       `
+      : location === '/about'
+      ? `
+        ${NavItem}:nth-child(2) {
+          ${NavLink} {
+            color: #fff;
+          }
+          ${NavLink}::before, ${NavLink}::after {
+            color: #6428e3;
+          }
+          
+        }
+      `
       : ''}
   ${NavLink}::before {
     content: '.';
@@ -74,13 +89,34 @@ export const NavMenu = styled.ul`
     font-size: 3rem;
     color: #808080;
   }
+
+  @media screen and (min-width: 800px) {
+    overflow: visible;
+    height: initial;
+    max-height: initial;
+    flex-direction: row;
+    width: initial;
+    position: static;
+
+    ${NavItem} {
+      padding: 0;
+      margin: 0;
+      margin-right: 1.2rem;
+    }
+    ${NavItem}:last-of-type {
+      margin-right: 0;
+    }
+    ${NavLink} {
+      font-size: 2rem;
+    }
+  }
 `;
 
 export const Bar = styled.span`
   display: block;
-  width: 0.5rem;
-  height: 0.5rem;
-  margin: 1rem auto;
+  width: 0.4rem;
+  height: 0.4rem;
+  margin-bottom: 0.7rem;
   border-radius: 50%;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -93,7 +129,7 @@ export const Bar = styled.span`
   }
 `;
 
-export const Hamburger = styled.button`
+export const Kebab = styled.button`
   background: none;
   border: none;
   display: block;
