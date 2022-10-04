@@ -58,7 +58,10 @@ const Navigation = ({ brand }) => {
               {/* <NavLink to='/contact' onClick={handleClick}>
                 contact
               </NavLink> */}
-              <a href='mailto:metablvk@gmail.com?subject=Get%20in%20touch'>
+              <a
+                href='mailto:metablvk@gmail.com?subject=Get%20in%20touch'
+                onClick={handleClick}
+              >
                 contact
               </a>
             </NavItem>
