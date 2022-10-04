@@ -3,8 +3,9 @@ import { Container } from '../../components/container/container.component';
 
 export const HomeContainer = styled(Container)`
   margin-top: 6rem;
-  text-align: center;
 
+  text-align: center;
+  position: relative;
   h1 {
     font-weight: 600;
   }
@@ -15,6 +16,21 @@ export const HomeContainer = styled(Container)`
   }
 `;
 
+// const random = (min, max) => {
+//   return Math.floor(Math.random() * (max - min + 1) + min);
+// };
+
+// const createFrames = () => {
+//   console.log('in create frames');
+//   let styles = '';
+//   for (let i = 0; i < 20; i += 1) {
+//     styles += `${5 * i}% { clip: rect(${random(i, 100)}px, 9999px, ${random(
+//       i,
+//       100
+//     )}px, 0) }`;
+//   }
+//   return styles;
+// };
 export const Glitch = styled.h1`
   color: #fff;
   position: relative;

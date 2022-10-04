@@ -29,7 +29,7 @@ const Navigation = ({ brand }) => {
       <NavigationHeader>
         <NavigationContainer>
           <LogoContainer>
-            <NavLink>
+            <NavLink to='/'>
               <span>{'< '}</span>
               {brand}
               <span>{' />'}</span>
