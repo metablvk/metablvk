@@ -34,6 +34,7 @@ export const ContactButton = styled.button`
 `;
 
 export const AboutContainer = styled(Container)`
+  margin-top: 2.4rem;
   h1 {
     font-size: 4rem;
     font-weight: 600;

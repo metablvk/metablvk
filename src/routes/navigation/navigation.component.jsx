@@ -46,8 +46,8 @@ const Navigation = ({ brand }) => {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to='/portoflio' onClick={handleClick}>
-                portfolio
+              <NavLink to='/works' onClick={handleClick}>
+                works
               </NavLink>
             </NavItem>
             <NavItem>

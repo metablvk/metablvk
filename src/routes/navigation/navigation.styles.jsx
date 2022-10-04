@@ -36,7 +36,8 @@ export const NavMenu = styled.ul`
   left: 0;
   max-height: 0;
   overflow: hidden;
-  height: calc(100vh - 6.8rem);
+  height: calc(100vh - 6.3rem);
+  /* height: 100%; */
   top: 6.3rem;
   background: rgba(14, 18, 18, 0.8);
   flex-direction: column;
@@ -75,6 +76,17 @@ export const NavMenu = styled.ul`
             color: #6428e3;
           }
           
+        }
+      `
+      : location === '/works'
+      ? `
+        ${NavItem}:nth-child(3) {
+          ${NavLink} {
+            color: #fff;
+          }
+          ${NavLink}::before, ${NavLink}::after {
+            color: #6428e3;
+          }
         }
       `
       : ''}
