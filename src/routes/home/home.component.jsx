@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { HomeContainer, Glitch } from './home.styles';
 import { motion } from 'framer-motion';
 const Home = () => {

@@ -5,7 +5,7 @@ export const HomeContainer = styled(Container)`
   margin-top: 6rem;
 
   text-align: center;
-  position: relative;
+
   h1 {
     font-weight: 600;
   }
