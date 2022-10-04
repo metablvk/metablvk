@@ -14,9 +14,10 @@ export const NavigationContainer = styled(Container)`
   display: flex;
   justify-content: space-between;
   position: relative;
-
+  align-items: center;
   @media screen and (min-width: 800px) {
     margin: 2.4rem auto;
+    align-items: initial;
   }
 `;
 
