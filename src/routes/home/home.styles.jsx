@@ -9,7 +9,7 @@ export const HomeContainer = styled(Container)`
     font-weight: 600;
   }
   p {
-    color: #a3a9c1;
+    color: #808080;
     margin-top: 2rem;
     font-size: 2rem;
   }
