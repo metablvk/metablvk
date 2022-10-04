@@ -1,6 +1,11 @@
-import { PortfolioContainer, ProjectGrid } from './works.styles';
+import { useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { PortfolioContainer, ProjectGrid } from './works.styles';
+
 const Works = () => {
+  useEffect(() => {
+    document.title = 'Metablvk | Works';
+  });
   return (
     <motion.div
       initial={{ opacity: 0 }}

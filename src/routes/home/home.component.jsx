@@ -1,6 +1,10 @@
-import { HomeContainer, Glitch } from './home.styles';
+import { useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { HomeContainer, Glitch } from './home.styles';
 const Home = () => {
+  useEffect(() => {
+    document.title = 'Metablvk | Home';
+  });
   return (
     <motion.div
       initial={{ opacity: 0 }}

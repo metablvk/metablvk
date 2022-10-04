@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { motion } from 'framer-motion';
@@ -9,6 +10,9 @@ import {
 } from './about.styles';
 
 const About = () => {
+  useEffect(() => {
+    document.title = 'Metablvk | About';
+  });
   return (
     <motion.div
       initial={{ opacity: 0 }}
