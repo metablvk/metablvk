@@ -13,9 +13,16 @@ import {
 
 const Navigation = ({ brand }) => {
   const [menuState, setMenuState] = useState(false);
-  const handleClick = () => setMenuState(!menuState);
+  const handleClick = () => {
+    /*
+      If the windows inner width is less then 800px allow changing of menu state to trigger the collapsable nav.
+    */
+    if (window.innerWidth < 800) {
+      setMenuState(!menuState);
+    }
+  };
   const location = useLocation();
-  console.log(location);
+
   return (
     <>
       <header>
@@ -29,16 +36,24 @@ const Navigation = ({ brand }) => {
           </LogoContainer>
           <NavMenu menuState={menuState} location={location.pathname}>
             <NavItem>
-              <NavLink to='/'>home</NavLink>
+              <NavLink to='/' onClick={handleClick}>
+                home
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to='/about'>about</NavLink>
+              <NavLink to='/about' onClick={handleClick}>
+                about
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to='/portoflio'>portfolio</NavLink>
+              <NavLink to='/portoflio' onClick={handleClick}>
+                portfolio
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to='/contact'>contact</NavLink>
+              <NavLink to='/contact' onClick={handleClick}>
+                contact
+              </NavLink>
             </NavItem>
           </NavMenu>
           <Kebab onClick={handleClick}>

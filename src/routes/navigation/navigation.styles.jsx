@@ -6,7 +6,7 @@ export const NavigationContainer = styled(Container)`
   display: flex;
   justify-content: space-between;
   position: relative;
-  align-items: center;
+
   @media screen and (min-width: 800px) {
     margin: 2.4rem auto;
   }
@@ -17,7 +17,7 @@ export const NavLink = styled(Link)``;
 export const LogoContainer = styled.div`
   ${NavLink} {
     color: #fff;
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   span {
     font-weight: 600;
