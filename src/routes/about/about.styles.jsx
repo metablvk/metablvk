@@ -9,6 +9,7 @@ export const MainSkills = styled.section`
   ul {
     display: flex;
     flex-wrap: wrap;
+    max-width: 60rem;
   }
 
   li {

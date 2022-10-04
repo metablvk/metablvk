@@ -1,10 +1,6 @@
-import { useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { HomeContainer, Glitch } from './home.styles';
+import { HomeContainer } from './home.styles';
 const Home = () => {
-  useEffect(() => {
-    document.title = 'Metablvk | Home';
-  });
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -12,8 +8,10 @@ const Home = () => {
       exit={{ opacity: 0 }}
     >
       <HomeContainer>
-        <Glitch data-title="Hi, I'm Jordan.">Hi, I'm Jordan.</Glitch>
+        {/* <Glitch data-title="Hi, I'm Jordan.">Hi, I'm Jordan.</Glitch> */}
+        <h1>Hi, I'm Jordan.</h1>
         <p>Creative fullstack developer.</p>
+        <div className='icons'></div>
       </HomeContainer>
     </motion.div>
   );

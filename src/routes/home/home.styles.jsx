@@ -7,12 +7,19 @@ export const HomeContainer = styled(Container)`
   text-align: center;
 
   h1 {
+    font-size: 4.8rem;
     font-weight: 600;
   }
   p {
     color: #808080;
     margin-top: 2rem;
     font-size: 2rem;
+  }
+
+  @media screen and (min-width: 800px) {
+    h1 {
+      font-size: 8rem;
+    }
   }
 `;
 

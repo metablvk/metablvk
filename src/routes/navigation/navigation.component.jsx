@@ -36,6 +36,9 @@ const Navigation = ({ brand }) => {
             </NavLink>
           </LogoContainer>
           <NavMenu menuState={menuState} location={location.pathname}>
+            {/* <NavItem>
+              <NavLink onClick={handleClick}>exit</NavLink>
+            </NavItem> */}
             <NavItem>
               <NavLink to='/' onClick={handleClick}>
                 home
@@ -52,9 +55,12 @@ const Navigation = ({ brand }) => {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to='/contact' onClick={handleClick}>
+              {/* <NavLink to='/contact' onClick={handleClick}>
                 contact
-              </NavLink>
+              </NavLink> */}
+              <a href='mailto:metablvk@gmail.com?subject=Get%20in%20touch'>
+                contact
+              </a>
             </NavItem>
           </NavMenu>
           <Kebab onClick={handleClick}>

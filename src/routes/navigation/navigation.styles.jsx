@@ -47,11 +47,11 @@ export const NavMenu = styled.ul`
   overflow: hidden;
   height: calc(100vh - 6.3rem);
   top: 6.3rem;
-  background: rgba(14, 18, 18, 0.8);
+  background: rgba(14, 18, 18, 0.95);
   flex-direction: column;
   width: 100%;
   align-items: flex-end;
-  justify-content: flex-end;
+
   z-index: 2;
   transition: 0.4s ease-in-out;
   ${({ menuState }) =>
@@ -98,13 +98,13 @@ export const NavMenu = styled.ul`
         }
       `
       : ''}
-  ${NavLink}::before {
+  ${NavLink}::before, a::before {
     content: '.';
   }
-  ${NavLink}::after {
+  ${NavLink}::after, a::after {
     content: '()';
   }
-  ${NavLink} {
+  ${NavLink}, a {
     letter-spacing: 0.3rem;
     font-size: 3rem;
     color: #808080;
@@ -118,15 +118,15 @@ export const NavMenu = styled.ul`
     width: initial;
     position: static;
 
-    ${NavItem} {
+    ${NavItem}, a {
       padding: 0;
       margin: 0;
       margin-right: 1.2rem;
     }
-    ${NavItem}:last-of-type {
+    ${NavItem}:last-of-type, a {
       margin-right: 0;
     }
-    ${NavLink} {
+    ${NavLink}, a {
       font-size: 2rem;
     }
   }
@@ -154,6 +154,14 @@ export const Kebab = styled.button`
   border: none;
   display: block;
   cursor: pointer;
+  /* position: fixed;
+  bottom: 0;
+  margin-bottom: 6rem;
+  right: 0;
+  margin-right: 2rem;
+  background: #000;
+  padding: 1rem 2rem; */
+  border-radius: 100%;
   ${({ menuState }) =>
     menuState
       ? `

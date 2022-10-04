@@ -52,6 +52,10 @@ const About = () => {
             <li>html</li>
             <li>css</li>
             <li>javascript</li>
+            <li>react</li>
+            <li>firebase</li>
+            <li>postgresql</li>
+            <li>python</li>
           </ul>
         </MainSkills>
         <section>
@@ -61,7 +65,9 @@ const About = () => {
             enjoys coding, but also likes hanging out with friends or playing
             games to pass time.
           </p>
-          <ContactButton>Get in Touch</ContactButton>
+          <a href='mailto:metablvk@gmail.com?subject=Get%20in%20touch'>
+            <ContactButton>Get in Touch</ContactButton>
+          </a>
         </section>
       </AboutContainer>
     </motion.div>
