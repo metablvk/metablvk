@@ -2,6 +2,14 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { Container } from '../../components/container/container.component';
 
+export const NavigationHeader = styled.header`
+  position: sticky;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: rgba(14, 18, 18, 1);
+`;
+
 export const NavigationContainer = styled(Container)`
   display: flex;
   justify-content: space-between;
@@ -36,8 +44,7 @@ export const NavMenu = styled.ul`
   left: 0;
   max-height: 0;
   overflow: hidden;
-  height: 100%;
-  height: 100vh;
+  height: calc(100vh - 6.3rem);
   top: 6.3rem;
   background: rgba(14, 18, 18, 0.8);
   flex-direction: column;

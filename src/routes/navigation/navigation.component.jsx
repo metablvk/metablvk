@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 
 import {
+  NavigationHeader,
   NavigationContainer,
   LogoContainer,
   NavMenu,
@@ -25,7 +26,7 @@ const Navigation = ({ brand }) => {
 
   return (
     <>
-      <header>
+      <NavigationHeader>
         <NavigationContainer>
           <LogoContainer>
             <NavLink>
@@ -62,7 +63,7 @@ const Navigation = ({ brand }) => {
             <Bar />
           </Kebab>
         </NavigationContainer>
-      </header>
+      </NavigationHeader>
       <Outlet />
     </>
   );
