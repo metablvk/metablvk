@@ -18,12 +18,20 @@ const About = () => {
         <p>Fullstack developer based in Edmonton who loves to code.</p>
         <SocialIcons>
           <li>
-            <a href='https://github.com/metablvk' target='_blank'>
+            <a
+              href='https://github.com/metablvk'
+              target='_blank'
+              rel='noreferrer'
+            >
               <FontAwesomeIcon icon={faGithub} />
             </a>
           </li>
           <li>
-            <a href='https://twitter.com/metablvk' target='_blank'>
+            <a
+              href='https://twitter.com/metablvk'
+              target='_blank'
+              rel='noreferrer'
+            >
               <FontAwesomeIcon icon={faTwitter} />
             </a>
           </li>

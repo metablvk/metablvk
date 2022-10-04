@@ -36,8 +36,8 @@ export const NavMenu = styled.ul`
   left: 0;
   max-height: 0;
   overflow: hidden;
-  height: calc(100vh - 6.3rem);
-  /* height: 100%; */
+  height: 100%;
+  height: 100vh;
   top: 6.3rem;
   background: rgba(14, 18, 18, 0.8);
   flex-direction: column;
