@@ -53,7 +53,7 @@ export const NavMenu = styled.ul`
   align-items: flex-end;
 
   z-index: 2;
-  transition: 0.4s ease-in-out;
+  transition: 0.1s ease-in-out;
   ${({ menuState }) =>
     menuState
       ? `

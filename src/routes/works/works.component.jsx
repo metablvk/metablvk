@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { PortfolioContainer, ProjectGrid } from './works.styles';
+import { PortfolioContainer, ProjectGrid, Img } from './works.styles';
+import editorImg from './../../assets/img/text-editor.png';
 
 const Works = () => {
   useEffect(() => {
@@ -21,19 +22,34 @@ const Works = () => {
         </section>
         <ProjectGrid>
           <div>
-            <p>Project 1</p>
-          </div>
-          <div>
-            <p>Project 2</p>
-          </div>
-          <div>
-            <p>Project 3</p>
-          </div>
-          <div>
-            <p>Project 4</p>
-          </div>
-          <div>
-            <p>Project 5</p>
+            <a
+              href='https://metablvk.github.io/simple-editor/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <Img src={editorImg} alt='' />
+            </a>
+            <ul>
+              <li>
+                <a
+                  href='https://metablvk.github.io/simple-editor/'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  site
+                </a>
+              </li>
+              <li>
+                <a
+                  href='https://github.com/metablvk/simple-editor'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  github
+                </a>
+              </li>
+            </ul>
+            <p>a simple text editor built using javascript.</p>
           </div>
         </ProjectGrid>
       </PortfolioContainer>

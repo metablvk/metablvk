@@ -26,17 +26,40 @@ export const PortfolioContainer = styled(Container)`
   }
 `;
 
+export const Img = styled.img`
+  width: 100%;
+  object-fit: contain;
+`;
+
 export const ProjectGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2.4rem;
+  margin-top: 4rem;
   div {
     width: 100%;
     height: 24rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #6428e3;
+    ul {
+      margin-top: 1.2rem;
+      font-size: 2rem;
+      display: flex;
+      justify-content: flex-end;
+    }
+    li {
+      margin-right: 1.2rem;
+      font-weight: 500;
+      letter-spacing: 0.2rem;
+    }
+    li:last-of-type {
+      margin-right: 0;
+    }
+    li a {
+      color: #808080;
+      transition: 0.3s;
+    }
+    li a:hover {
+      color: #6428e3;
+    }
   }
 
   @media screen and (min-width: 800px) {
