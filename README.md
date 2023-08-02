@@ -10,6 +10,9 @@ class Jordan {
   skills() {
     return ['HTML/CSS/JS', 'Typescript', 'Node.Js', 'Typescript', 'React'];
   }
+  learning() {
+    return ['Go', 'Rust'];
+  }
 }
 
 ```
