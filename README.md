@@ -1,4 +1,4 @@
-### about(Jordan)
+
 ```js
 class Jordan {
   name: string;
@@ -8,7 +8,7 @@ class Jordan {
     this.email = 'metablvk@gmail.com';
   }
   skills() {
-    return ['HTML/CSS/JS', 'Typescript', 'Node.Js', 'Typescript', 'react'];
+    return ['HTML/CSS/JS', 'Typescript', 'Node.Js', 'Typescript', 'React'];
   }
 }
 
