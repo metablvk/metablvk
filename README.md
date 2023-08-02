@@ -1,5 +1,27 @@
-### Hi there 👋
+### about(Jordan)
+```js
+let skills = ["HTML", "CSS", "JS", "TS", "React"];
+let currentlyLearning = ["Go", "Rust"];
+let eductation = {NAIT: "DMIT Web Development"};
 
+let fieldOfInterests = [
+    "Web Development",
+    "Design",
+    "Cyber Security"
+];
+
+let goals = [
+    "Get better at design", 
+    "refactoring code",
+    "be able to build applications in go or rust."
+    ];
+hobbies = [
+    "Gaming", 
+    "Hanging out with friends", 
+    "tech meet ups", 
+    "cooking"
+    ];
+```
 <!--
 **metablvk/metablvk** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
