@@ -15,6 +15,7 @@ let goals = [
     "refactoring code",
     "be able to build applications in go or rust."
     ];
+
 hobbies = [
     "Gaming", 
     "Hanging out with friends", 
