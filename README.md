@@ -9,8 +9,7 @@ class Jordan {
     this.email = "metablvk@gmail.com";
   }
   skills() {
-    return ["HTML/CSS/JS", "Typescript", "Node.Js",
-      "Typescript", "React", "Python"];
+    return ["HTML/CSS/JS", "Typescript", "Node.Js", "Typescript", "React", "Python"];
   }
   learning() {
     return ["Go", "Rust"];
