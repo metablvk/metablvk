@@ -23,7 +23,8 @@ class Jordan {
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"  width="45" height="45" />&nbsp; 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="45" height="45"/>&nbsp; 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="45" height="45" />&nbsp; 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" width="45" height="45"/>          
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" width="45" height="45"/>&nbsp; 
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" width="45" height="45" />
 </p>
 
 <!--
